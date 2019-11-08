@@ -13,6 +13,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        print(fbfirebase(text: "stressed"))
+    }
+    
+    func fbfirebase(text: String) -> String {
+        return String(text.reversed())
     }
 
     @IBAction func showMessage(sender: UIButton) {
