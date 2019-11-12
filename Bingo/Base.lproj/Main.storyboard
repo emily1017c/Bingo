@@ -18,7 +18,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" userLabel="login_mainpage" customClass="ViewController" customModule="Bingo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" id="Zm6-OP-4A9">
@@ -56,7 +56,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" id="7Al-h7-1WT">
-                                <rect key="frame" x="87" y="546" width="200" height="42"/>
+                                <rect key="frame" x="87" y="530" width="200" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.38823807239532471" green="0.38823023438453674" blue="0.38823556900024414" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="PingFangTC-Medium" family="PingFang TC" pointSize="16"/>
@@ -80,7 +80,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9kF-SU-gYA">
-                                <rect key="frame" x="221" y="620" width="31" height="30"/>
+                                <rect key="frame" x="221" y="601" width="31" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="PingFangTC-Medium" family="PingFang TC" pointSize="14"/>
                                 <state key="normal" title="註冊">
@@ -111,6 +111,7 @@
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="mxy-ZW-HZi"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -119,9 +120,9 @@
         <!--creat new account-->
         <scene sceneID="sCD-r0-dTO">
             <objects>
-                <viewController id="iFA-nT-Qsv" userLabel="creat new account" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="iFA-nT-Qsv" userLabel="creat new account" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pRN-eU-1ef">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="創立新帳號" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="G8N-9D-Lcz">
@@ -218,11 +219,24 @@
                                 <color key="textColor" red="0.40784313729999999" green="0.40784313729999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dXO-g5-DWf">
+                                <rect key="frame" x="1" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem leftItemsSupplementBackButton="YES" id="QAc-8Z-AeB">
+                                        <barButtonItem key="leftBarButtonItem" image="chevron.left" catalog="system" id="7GN-St-dUG">
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="d3a-Jx-0Zh"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="7zo-NQ-Exs"/>
                     </view>
-                    <navigationItem key="navigationItem" id="1kn-2K-6Hd"/>
+                    <navigationItem key="navigationItem" id="ddg-g3-T5L"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wSn-Ir-SRX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -231,9 +245,9 @@
         <!--verification-->
         <scene sceneID="yrs-iM-9KQ">
             <objects>
-                <viewController id="YrT-Fn-qpk" userLabel="verification" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="YrT-Fn-qpk" userLabel="verification" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2EW-te-Rih">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="驗證碼已發送至您的信箱" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="itn-Ri-NO2">
@@ -286,11 +300,24 @@
                                     <segue destination="r6V-Mv-UHt" kind="show" id="bRH-q6-SdC"/>
                                 </connections>
                             </button>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o9a-oY-mbd">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem id="ooJ-Jy-Ame">
+                                        <barButtonItem key="leftBarButtonItem" image="chevron.left" catalog="system" id="OoA-L9-Rlr">
+                                            <connections>
+                                                <segue destination="iFA-nT-Qsv" kind="show" id="XaF-QU-Irx"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="zWe-lT-vTe"/>
                     </view>
-                    <navigationItem key="navigationItem" id="cgH-fD-I0U"/>
+                    <navigationItem key="navigationItem" id="XZ6-Wm-BLT"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hmL-Zl-kit" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -299,9 +326,9 @@
         <!--login-->
         <scene sceneID="MDA-Dj-egY">
             <objects>
-                <viewController id="rbc-Be-zGQ" userLabel="login" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="rbc-Be-zGQ" userLabel="login" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kxC-1J-xZB">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="登入您的帳號" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0Ja-YS-Lsb">
@@ -353,6 +380,19 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DiQ-uT-1Np">
+                                <rect key="frame" x="1" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem id="vVa-jZ-sb2">
+                                        <barButtonItem key="leftBarButtonItem" image="chevron.left" catalog="system" id="OHZ-iU-7Em">
+                                            <connections>
+                                                <segue destination="r6V-Mv-UHt" kind="show" id="gVk-VE-sOg"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="KFu-8H-Wpv"/>
@@ -366,9 +406,9 @@
         <!--sign up success-->
         <scene sceneID="wiW-hP-i5P">
             <objects>
-                <viewController id="r6V-Mv-UHt" userLabel="sign up success" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="r6V-Mv-UHt" userLabel="sign up success" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Qm-ab-ZcI">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jrQ-k7-XE6">
@@ -392,6 +432,19 @@
                                     <segue destination="rbc-Be-zGQ" kind="show" id="hfp-iY-rjT"/>
                                 </connections>
                             </button>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ACL-9m-X2w">
+                                <rect key="frame" x="1" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem id="0ZO-oF-CtD">
+                                        <barButtonItem key="leftBarButtonItem" image="chevron.left" catalog="system" id="yda-xT-wan">
+                                            <connections>
+                                                <segue destination="YrT-Fn-qpk" kind="show" id="3uv-JI-BFE"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="hg7-8C-dOL"/>
@@ -403,4 +456,12 @@
             <point key="canvasLocation" x="2145" y="20"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="chevron.left" catalog="system" width="48" height="64"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="gVk-VE-sOg"/>
+        <segue reference="3uv-JI-BFE"/>
+        <segue reference="XaF-QU-Irx"/>
+    </inferredMetricsTieBreakers>
 </document>
