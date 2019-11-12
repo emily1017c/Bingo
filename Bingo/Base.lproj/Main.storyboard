@@ -13,10 +13,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--login_mainpage-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Bingo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="login_mainpage" customClass="ViewController" customModule="Bingo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -116,10 +116,10 @@
             </objects>
             <point key="canvasLocation" x="48.799999999999997" y="20.239880059970016"/>
         </scene>
-        <!--View Controller-->
+        <!--creat new account-->
         <scene sceneID="sCD-r0-dTO">
             <objects>
-                <viewController id="iFA-nT-Qsv" sceneMemberID="viewController">
+                <viewController id="iFA-nT-Qsv" userLabel="creat new account" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pRN-eU-1ef">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -228,10 +228,10 @@
             </objects>
             <point key="canvasLocation" x="732" y="19.340329835082461"/>
         </scene>
-        <!--View Controller-->
+        <!--verification-->
         <scene sceneID="yrs-iM-9KQ">
             <objects>
-                <viewController id="YrT-Fn-qpk" sceneMemberID="viewController">
+                <viewController id="YrT-Fn-qpk" userLabel="verification" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2EW-te-Rih">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -283,7 +283,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="rbc-Be-zGQ" kind="show" id="h3n-sD-vMJ"/>
+                                    <segue destination="r6V-Mv-UHt" kind="show" id="bRH-q6-SdC"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -296,10 +296,10 @@
             </objects>
             <point key="canvasLocation" x="1436" y="18.440779610194905"/>
         </scene>
-        <!--View Controller-->
+        <!--login-->
         <scene sceneID="MDA-Dj-egY">
             <objects>
-                <viewController id="rbc-Be-zGQ" sceneMemberID="viewController">
+                <viewController id="rbc-Be-zGQ" userLabel="login" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kxC-1J-xZB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -352,9 +352,6 @@
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="r6V-Mv-UHt" kind="show" id="Ofh-V4-oYy"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -364,12 +361,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1oK-fa-Xs0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2156" y="20"/>
+            <point key="canvasLocation" x="49" y="755"/>
         </scene>
-        <!--View Controller-->
+        <!--sign up success-->
         <scene sceneID="wiW-hP-i5P">
             <objects>
-                <viewController id="r6V-Mv-UHt" sceneMemberID="viewController">
+                <viewController id="r6V-Mv-UHt" userLabel="sign up success" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Qm-ab-ZcI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -383,7 +380,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.56862745100000001" green="0.32549019610000002" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="登入">
+                                <state key="normal" title="立即登入">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -391,6 +388,9 @@
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="rbc-Be-zGQ" kind="show" id="hfp-iY-rjT"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -400,7 +400,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hPL-hJ-jv1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2852" y="20"/>
+            <point key="canvasLocation" x="2145" y="20"/>
         </scene>
     </scenes>
 </document>
