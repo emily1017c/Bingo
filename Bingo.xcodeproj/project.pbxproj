@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		962DF996236301720037BC93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 962DF995236301720037BC93 /* Assets.xcassets */; };
 		962DF999236301720037BC93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 962DF997236301720037BC93 /* LaunchScreen.storyboard */; };
 		969BEAD9237AA01D00CCFF13 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 969BEAD8237AA01D00CCFF13 /* GoogleService-Info.plist */; };
+		B36E8F052383D4FA007E0BDA /* image in Resources */ = {isa = PBXBuildFile; fileRef = B36E8F042383D4FA007E0BDA /* image */; };
 		B3DCAF3C2375667300080267 /* Songti.ttc in Resources */ = {isa = PBXBuildFile; fileRef = B3DCAF3B2375667300080267 /* Songti.ttc */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		962DF998236301720037BC93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		962DF99A236301720037BC93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		969BEAD8237AA01D00CCFF13 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B36E8F042383D4FA007E0BDA /* image */ = {isa = PBXFileReference; lastKnownFileType = folder; path = image; sourceTree = "<group>"; };
 		B3DCAF3B2375667300080267 /* Songti.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Songti.ttc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -50,13 +52,13 @@
 				914A18EA87C980A41BBAEDAD /* Pods-Bingo.debug.xcconfig */,
 				698D5482C58E4C7AE99A4BD6 /* Pods-Bingo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
 		962DF982236301710037BC93 = {
 			isa = PBXGroup;
 			children = (
+				B36E8F042383D4FA007E0BDA /* image */,
 				962DF98D236301710037BC93 /* Bingo */,
 				962DF98C236301710037BC93 /* Products */,
 				07597BB2AFD3E57E853AD34C /* Pods */,
@@ -155,6 +157,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B36E8F052383D4FA007E0BDA /* image in Resources */,
 				962DF999236301720037BC93 /* LaunchScreen.storyboard in Resources */,
 				962DF996236301720037BC93 /* Assets.xcassets in Resources */,
 				969BEAD9237AA01D00CCFF13 /* GoogleService-Info.plist in Resources */,
